@@ -14,7 +14,7 @@ const ResultCard: React.FC<ResultCardProps> = ({ result, persona, onReset }) => 
   return (
     <div className="space-y-8 animate-fade-in">
       
-      {/* Header / Trainer Message */}
+      {/* Trainer Message */}
       <div className={`rounded-2xl bg-gradient-to-r ${config.themeClass} p-1 shadow-lg`}>
         <div className="bg-white rounded-xl p-6 md:p-8">
           <div className="flex items-start gap-4">
@@ -22,7 +22,7 @@ const ResultCard: React.FC<ResultCardProps> = ({ result, persona, onReset }) => 
                 <MessageSquareQuote className="w-8 h-8" />
              </div>
              <div>
-                <h3 className={`text-lg font-bold text-${config.color}-700 mb-2`}>トレーナーからのメッセージ</h3>
+                <h3 className={`text-lg font-bold text-${config.color}-700 mb-2`}>トレーナーからのひとこと</h3>
                 <p className="text-slate-700 text-lg leading-relaxed whitespace-pre-wrap">
                   {result.trainerMessage}
                 </p>
@@ -36,7 +36,7 @@ const ResultCard: React.FC<ResultCardProps> = ({ result, persona, onReset }) => 
         <div className="lg:col-span-2 space-y-6">
           <h3 className="text-2xl font-bold text-slate-800 flex items-center gap-2">
             <Zap className={`w-6 h-6 text-${config.color}-500 fill-current`} />
-            本日のメニュー
+            本日のメニューリスト
           </h3>
           
           <div className="space-y-4">
@@ -63,11 +63,11 @@ const ResultCard: React.FC<ResultCardProps> = ({ result, persona, onReset }) => 
           </div>
         </div>
 
-        {/* Side Advice */}
+        {/* Advice */}
         <div className="space-y-6">
           <h3 className="text-2xl font-bold text-slate-800 flex items-center gap-2">
             <Utensils className="w-6 h-6 text-orange-500" />
-            食事・メンタル
+            食事＆メンタルアドバイス
           </h3>
 
           <div className="bg-orange-50 rounded-2xl p-6 border border-orange-100">
