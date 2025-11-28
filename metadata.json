@@ -1,0 +1,5 @@
+{
+  "name": "FitGenius AI Trainer",
+  "description": "A personalized AI workout generator that adapts to your mood, cravings, and goals using three distinct trainer personas.",
+  "requestFramePermissions": []
+}
